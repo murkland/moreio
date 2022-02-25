@@ -25,6 +25,7 @@ func Open(ctx context.Context, path string) (io.ReadSeekCloser, error) {
 	if err != nil {
 		return nil, err
 	}
+	defer res.Body.Close()
 	body, err := ioutil.ReadAll(res.Body)
 	if err != nil {
 		return nil, err
