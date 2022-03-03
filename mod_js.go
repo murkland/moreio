@@ -20,7 +20,7 @@ func (f *file) Close() error {
 	return nil
 }
 
-func Open(ctx context.Context, path string) (io.ReadSeekCloser, error) {
+func Open(ctx context.Context, path string) (File, error) {
 	res, err := ctxhttp.Get(ctx, http.DefaultClient, path)
 	if err != nil {
 		return nil, err
