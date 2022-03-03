@@ -5,7 +5,6 @@ package moreio
 import (
 	"bytes"
 	"context"
-	"io"
 	"io/ioutil"
 	"net/http"
 

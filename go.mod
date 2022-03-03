@@ -1,4 +1,4 @@
-module github.com/yumland/moreio
+module github.com/murkland/moreio
 
 go 1.18
 
